@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
 
+    <style>
+        body{
+            font-family: Arial;
+            text-align:center;
+        }
+
+        .gallery img{
+            width:150px;
+            height:100px;
+            margin:10px;
+            border-radius:10px;
+            cursor:pointer;
+            transition:0.4s;
+        }
+
+        .gallery img:hover{
+            transform:scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Image Gallery</h1>
+
+    <div class="gallery">
+        <img src="https://picsum.photos/id/1015/300/200">
+        <img src="https://picsum.photos/id/1025/300/200">
+        <img src="https://picsum.photos/id/1035/300/200">
+        <img src="https://picsum.photos/id/1045/300/200">
+    </div>
+
+</body>
+</html>
