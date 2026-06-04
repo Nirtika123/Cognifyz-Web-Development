@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automatic Slideshow</title>
 
+    <style>
+        body{
+            text-align:center;
+            font-family:Arial;
+        }
+
+        .slider{
+            width:600px;
+            height:350px;
+            margin:auto;
+            overflow:hidden;
+        }
+
+        .slides{
+            display:flex;
+            width:300%;
+            animation:slide 9s infinite;
+        }
+
+        .slides img{
+            width:600px;
+            height:350px;
+        }
+
+        @keyframes slide{
+            0%{
+                transform:translateX(0);
+            }
+
+            33%{
+                transform:translateX(-600px);
+            }
+
+            66%{
+                transform:translateX(-1200px);
+            }
+
+            100%{
+                transform:translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Image Slideshow</h1>
+
+    <div class="slider">
+        <div class="slides">
+            <img src="https://picsum.photos/id/1015/600/350">
+            <img src="https://picsum.photos/id/1025/600/350">
+            <img src="https://picsum.photos/id/1035/600/350">
+        </div>
+    </div>
+
+</body>
+</html>
